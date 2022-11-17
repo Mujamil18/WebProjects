@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Card</title>
+	<!-- <link rel="stylesheet" href="prodcard.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+	<style>
+*{
+	margin: auto;
+	padding: 0;
+}
+body 
+{
+	background-color: linen;
+}
+
+.container
+{
+	margin-top: 90px;
+	display: flex;
+	/*border: 1px solid white;*/
+	border-radius: 10px;
+	width: 500px;
+	height:370px;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0, 0, 0.2);
+}
+
+.perfumecard
+{
+	width: 50%;
+	height: 370px;
+	box-sizing: border-box;
+	/*border-radius: 20px;*/
+}
+.perfumecard #image
+{
+	height: 100%;
+	width: 100%;
+	border-radius: 10px 0 0 10px;
+}
+
+.content
+{
+	/*border: 1px solid black;*/
+	padding: 25px;
+	background-color: cream;
+	width: 50%;
+	height: 370px;
+	box-sizing: border-box;
+	border-radius: 0 10px 10px 0;
+}
+.rs1, .rs2 
+{	
+	width: 50%;
+	/*border: 1px solid black;*/
+}
+.rs1
+{
+	font-family: 'Fraunces', serif;
+	font-size: 24px;
+	color: darkcyan;
+}
+.rs2
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px; 
+	color: grey;
+	padding: 0 20px;
+}
+h4
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	color: dimgrey;
+	letter-spacing: 5px;
+	/*border: 1px solid black;*/
+}
+.name
+{
+	font-family: 'Fraunces', serif;
+	font-size: 27px;
+	color: hsl(212, 21%, 14%);
+	/*border: 1px solid black;*/
+	line-height: 100%;
+}
+.desc
+{
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 11.5px;
+	color: hsl(228, 10%, 60%);
+	/*border: 1px solid black;*/
+	line-height: 1.6;
+}
+.rupees
+{
+	/*border: 1px solid black;*/
+	display: flex;
+	padding: 0 0 15px 0;
+}
+.button
+{
+  border: none;
+  font-family: 'Montserrat', sans-serif;  
+  font-size: 12px;
+  display: block;
+  width: 95%;
+  height: 35px;
+  background-color: #1B4D3E;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 7px;
+}
+.cart
+{
+	width: 11px;
+}
+
+	</style>
+
+</head>
+<body>
+<div class="container">
+	<div class="perfumecard">
+		<img id="image" src="image-product-desktop.jpg" width="300px"/>
+	</div>
+	<div class="content">
+		<h4>PERFUME</h4><br>
+		<h1 class="name"> Gabrielle Essence Eau De Parfum </h1><br>
+		<p class="desc"><b>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</b></p><br>
+		<div class="rupees">
+		<h1 class="rs1"> $149.99 </h1>
+		<h6 class="rs2"> <del>$169.99 </del></h6>
+	   </div>
+		<!-- <br> -->
+		<button type="button" class="button"> 
+		<img class="cart" src="icon-cart.svg">
+		 Add to Cart </button>
+		<!-- <i class="fa-regular fa-cart-plus"></i> -->
+	</div>
+</div>
+</body>
+</html>

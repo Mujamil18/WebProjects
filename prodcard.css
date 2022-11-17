@@ -1,0 +1,10 @@
+body 
+{
+	background-color: #faebd7
+}
+.content
+{
+	border: 2px solid black;
+	background-color: white;
+	border-radius:10% ;
+}

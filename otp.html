@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		OTP Generator
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href = "otp.css">
+</head>
+
+<body>
+	<div id="OtpContainer">
+			<p> Click the button to get OTP </p>
+			<button type = "button" id ="getOtpBtn" onclick="generateOtp()">Get OTP </button>
+		<div class="getOtp">
+		    <div class = "otpview" id = "otpbox"></div>
+		    <h4> Your OTP will expire in <span id="timing">30</span> seconds</h4>
+	    </div>
+	</div>
+
+	<div class = "container" id="container">
+		
+		<p id="enterLabel"> Enter OTP</p>
+
+		<div class = "enterotp">
+			<input type = "text" id="box1" maxlength="1">
+			<input type = "text" id="box2" maxlength="1">
+			<input type = "text" id="box3" maxlength="1">
+			<input type = "text" id="box4" maxlength="1">
+			<input type = "text" id="box5" maxlength="1">
+			<input type = "text" id="box6" maxlength="1">
+		</div>
+			<p id="incorrect">INCORRECT OTP. TRY AGAIN!</p>
+		<div class="buttons">
+		<button type ="button" id="submitBtn" onclick="validate()">Submit</button>
+		<button type="button" id="resendBtn" onclick="displayOtp()">RESEND OTP</button>
+	    </div>
+	</div>
+	<div class="result" id="result">
+		<h2> OTP Verified!!! </h2>
+		<img src="verified.gif">
+	</div>
+</body>
+<script src = "otp.js">
+</script>
+</html>
+
+<!-- Javascript - explained innerHTML and its usage 
+explained a student's assignment and when to innerHTML. 
+to store function in an variable and discussed about hoisting (hoisting - all veraible declaration will go up)
+function declrations are hoisted , function expressions(storing a function in a varaible) are not hoisted
+
+DOM purify - to refer (third party library)--> 

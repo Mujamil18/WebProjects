@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Simple Calculator </title>
+	<style>
+		body
+		{
+			margin: auto;
+			padding: 150px 0 0 0;
+			background-color: #F2EEEE;
+		}
+		.container
+		{
+			box-sizing: border-box;
+			margin: auto;
+			padding: 10px;
+			width: 400px;
+			font-size: 20px;
+			display: flex;
+			/*flex-direction: row;*/
+			border: 2px solid white;
+			border-radius: 10px;
+			background-color: #1C1C1C;
+		}
+		.numbers
+		{
+			width: 200px;
+			/*border:  1px solid white;*/
+			line-height: 60px;
+			/*display: flex;
+			flex-direction: column;*/
+
+		}
+		.view
+		{
+			padding:  20px 30px;
+			line-height: 30px;
+			width: 250px;
+			display: flex;
+			flex-direction: column;
+			/*justify-content: space-between;*/
+			color: white;
+			/*border: 1px solid white;*/
+		}
+		.numbers > input
+		{
+			width:  100px;
+			/*background-color: #7CB9E8;*/
+			background-color: #505050;
+			border: 2px solid white;
+			border-radius: 5px;
+			color: white;
+		}
+		.result
+		{
+			padding: 0 0 0 5px;
+			width: 200px;
+			/*border:  1px solid white;*/
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		#resultBox
+		{
+			background-color:#77DD77 ;
+			width:  100px;
+			border: 2px solid white;
+			border-radius: 5px;
+		}
+		.ops 
+		{
+			/*border: 1px solid white;*/
+			/*padding: 20px;*/
+
+			width:  200px;
+			display: flex;
+		    justify-content: space-evenly;
+		}
+		.ops > button
+		{
+			width:  70px;
+			border:  2px solid white;
+			border-radius: 5px;
+			font-size: 30px;
+			font-weight: bold;
+			background-color: #D4D4D2;
+		}
+
+		.operators
+		{
+			padding: 10px 10px;
+			/*border: 1px solid white;*/
+			width: 100px;
+			height: 300px;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+		.operators > button
+		{
+			width: 45px;
+			height: 45px;
+           border-radius: 50%;
+           border:  1px solid white;
+           background-color: #FF9500;
+           font-size: 25px;
+           font-weight:bold ;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="view">
+	 <div class="numbers">
+		<label> Number 1 </label>
+		<input type = "text" id="number1"><br>
+		<label> Number 2 </label>
+		<input type ="text" id="number2"><br>
+	 </div><br>
+	 <div class="result">
+		<label> Result </label>
+		<input type="text" id="resultBox">
+	</div><br>
+	<div class="ops">
+		<button type="button" onclick = " resetCalculation()">C</button>
+		<button type="button">=</button>
+	</div>
+   </div>
+	<div class="operators">
+		<button type="button" onclick = "showAddResult()" id="add">+</button>
+		<button type ="button" onclick="showSubtractResult()" id="sub">-</button>
+		<button type ="button" onclick = "showMultiplyResult()" id="multiply">*</button>
+		<button type="button" onclick = "showDivideResult()" id="division">/</button>
+		<button type="button" onclick = "showModuloResult()" id="modulo">%</button>
+	</div>
+		
+	</div>
+</body>
+<script src="calculator.js"></script>
+</html>
+

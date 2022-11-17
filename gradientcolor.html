@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	RandomColorGenerator 
+</title>
+<style>
+   body
+   {
+   	/*display: flex;
+      justify-content: center;
+      align-items: center;*/
+      margin: 0;
+      /*padding: 0;*/
+      height: 100vh;
+   }
+   .d1, .d2, .d3, .d4, .d5, .d6, .d7, .d8, .d9 , .d10
+   {
+      margin: auto;
+      padding: 27px 0 10px 0;
+      /*border:  2px solid black;*/
+      box-sizing: border-box;
+      border-radius: 5px;
+   }
+   .d1
+   {
+   	width: 100%;
+   	height: 100vh;
+   }
+   .d2
+   {
+   	width: 95%;
+   	height: 90vh;
+   }
+   .d3
+   {
+   	width: 90%;
+   	height: 80vh;
+   }
+   .d4
+   {
+      width: 85%;
+      height: 70vh;
+   }
+   .d5
+   {
+      width:  80%;
+      height: 60vh;
+   }
+   .d6
+   {
+      width : 75%;
+      height: 50vh;
+   }
+   .d7
+   {
+      width: 70%;
+      height: 40vh;
+   }
+   .d8
+   {
+      width: 65%;
+      height: 30vh;
+   }
+   .d9
+   {
+      width: 60%;
+      height: 20vh;
+   }
+   .d10
+   {
+      padding: 0;
+      width: 55%;
+      height: 10vh;  
+
+   }
+   button
+   {
+      /*margin: 0 0 0 25px;*/
+      
+      margin: 18px 0 0 12px;
+      box-sizing: border-box;
+   	width: 70%;
+   	background-color: white;
+   	color: black;
+      border: 2px solid black;
+      border-radius: 10px;
+      
+</style>
+
+</head>
+<body>
+	<div id="div1" class="d1">
+		<div id="div2" class="d2">
+			<div id="div3" class="d3">
+				<div id="div4" class="d4">
+               <div id="div5" class="d5">
+                  <div id="div6" class="d6">
+                     <div id="div7" class="d7">
+                        <div id="div8" class="d8">
+                           <div id="div9" class="d9">
+                              <div id="div10" class="d10">
+						              <button class="but" type ="button" onclick= "setColor()">Click</button>
+                             </div>
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+   <script>
+   
+   function setColor()
+   {   
+      // var color = generateRandomColor();
+      let hue = generateHue();
+
+   document.body.style.backgroundColor = `hsl(${hue}, 100%, 100%)`;
+   document.getElementById("div1").style.backgroundColor = `hsl(${hue}, 100%, 90%)`;
+   document.getElementById("div2").style.backgroundColor = `hsl(${hue}, 100%, 80%)`;
+   document.getElementById("div3").style.backgroundColor = `hsl(${hue}, 100%, 70%)`;
+   document.getElementById("div4").style.backgroundColor = `hsl(${hue}, 100%, 60%)`;
+   document.getElementById("div5").style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
+   document.getElementById("div6").style.backgroundColor = `hsl(${hue}, 100%, 40%)`;
+   document.getElementById("div7").style.backgroundColor = `hsl(${hue}, 100%, 30%)`;
+   document.getElementById("div8").style.backgroundColor = `hsl(${hue}, 100%, 20%)`;
+   document.getElementById("div9").style.backgroundColor = `hsl(${hue}, 100%, 10%)`;
+   document.getElementById("div10").style.backgroundColor = `hsl(${hue}, 100%, 0%)`;
+   }
+   
+   function generateHue()
+   {
+      return Math.round(Math.random()*360);
+   }
+
+
+   </script>
+</body>
+</html>
+
+

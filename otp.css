@@ -1,0 +1,162 @@
+*
+{
+	margin: auto;
+}
+body
+{
+	margin: 0;
+	padding: 50px 0 0 0;
+
+}
+#OtpContainer
+{
+	margin: auto;
+	padding: 20px;
+	width: 400px;
+	height: 200px;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	/*background-color: #DDDDDD;*/
+	background-color:#F9F7F7;
+	font-family: 'Josefin Sans', sans-serif;
+}
+#OtpContainer > button
+{
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	background-color: #3F72AF;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+
+}
+.container
+{
+	margin: auto;
+	padding: 20px;
+	width: 400px;
+	height: 200px;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	/*background-color: #DDDDDD;*/
+	background-color:#F9F7F7;
+}
+
+h4
+{
+	font-family: sans-serif;
+	font-size: 15px;
+
+}
+h4 > span 
+{
+	color: green;
+	font-size: 20px;
+}
+
+.otpview
+{
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border: none;
+	border-radius: 5px;
+	width:  200px;
+	height: 45px;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #DBE2EF;
+	letter-spacing: 5px;
+
+}
+/*.timing
+{
+	width: 300px;
+	height:  50px;
+}*/
+
+#enterLabel
+{
+	/*border: 1px solid black;*/
+	padding: 20px 0 0 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.enterotp
+{
+	/*border: 2px solid black;*/
+	width:  300px;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+}
+#incorrect
+{
+	width: 300px;
+	height:  20px;
+	/*border: 1px solid black;*/
+	font-size: 15px;
+	font-family: monospace;
+	text-align: center;
+	color: red;
+	visibility: hidden;
+}
+.buttons
+{
+	/*border: 1px solid black;*/
+	width: 300px;
+	display: flex;
+
+}
+#submitBtn
+{
+
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	background-color: #3F72AF;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+
+}
+
+#resendBtn
+{
+	width: 50%;
+	border: none;
+	/*color: rgba(0, 150, 255, 0.3);*/
+	color: #DBE2EF;;
+	background-color: white;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color:#F9F7F7;
+
+}
+.enterotp > input
+{
+	width:  40px;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.result
+{
+	text-align: center;
+	width: 400px;
+	/*border: 1px solid black;*/
+	display: none;
+}
